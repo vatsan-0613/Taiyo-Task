@@ -1,0 +1,119 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+header{
+  text-align: center;
+  padding-top : 0.5rem;
+  background-color: aqua;
+  padding-bottom: 0.5rem;
+  position: fixed;
+}
+
+h3{
+  margin: 0;
+}
+.no-contacts{
+  height : 90vh;
+}
+
+.chart-container{
+  width : 100%;
+  max-width: 700px;
+  margin : 0 auto;
+}
+
+.brand-text{
+  font-size: 0.5rem;
+}
+
+.map-container{
+  width: 100%;
+  margin : 0 auto;
+  max-width: 700px;
+  margin-bottom: 3rem;
+}
+
+.side-bar{
+  background-color: hsl(30, 18%, 91%);
+  text-align: center;
+  padding-top: 3rem;
+  height : 100vh;
+  position : fixed;
+  z-index: 1; 
+}
+.contacts{
+  margin-left: 15rem;
+  display: flex;
+  max-width: 80%;
+}
+.link{
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-form{
+  width : 20rem;
+  margin : 0 auto;
+  margin-top: 5rem;
+  border : 2px solid #F1564E;
+  padding : 20px;
+  border-radius : 3px;
+}
+
+.btn-text{
+  font-weight: bold;
+  font-size: 1.4rem;
+  color : blue; 
+  width : 100%;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+}
+
+.submit-btn{
+  display: block;
+  margin : 3px auto;
+  margin-top : 2rem;
+}
+
+.icon:hover{
+  cursor: pointer;
+}
+
+.trash-icon:hover{
+  color: red;
+}
+
+.main-brand{
+  color : #F1564E;
+  font-weight: bold;
+}
+
+.nav-link:hover{
+  color : #F1564E !important;
+}
+
+@media (max-width: 767px) { /* Adjust the breakpoint as needed */
+  .side-bar {
+    display: none;
+  }
+  .contacts{
+    margin-left: 0;
+    width: 100%;
+  }
+  .chart-container{
+    max-width: none;
+    overflow-x: scroll;
+  }
+  .map-container{
+    overflow-x: scroll;
+    max-width: none;
+    height : 250px;
+  }
+
+}
